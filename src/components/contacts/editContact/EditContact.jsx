@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {Link, useNavigate, useParams} from "react-router-dom";
-import userImg from "../../../Images/userImg.png";
 import { useDispatch, useSelector } from "react-redux";
 import { constactSelector, updateUser } from "../../../redux/ContextReducer";
+import { FaUserCircle } from "react-icons/fa";
 
 const EditContact = ()=>{
     const dispatch = useDispatch();
@@ -71,7 +71,8 @@ const EditContact = ()=>{
                                 </form>
                             </div>
                             <div className="col-md-6">
-                                 <img src={userImg} alt="userImg" className="contact-img"/>
+                            <FaUserCircle className="contact-img" style={{color:"white"}}/>
+                              
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ const AddContact = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <p className="h4 text-success fw-bold">Create Contact</p>
+                            <p className="h4 fw-bold" style={{color:"#60dae0"}} >Create Contact</p>
                         </div>
                         <div className="row">
                             <div className="col-md-4">
@@ -46,7 +46,7 @@ const AddContact = ()=>{
                                         <input type="email" className="form-control" placeholder="Email"/>
                                     </div>
                                     <div className="mb-2">
-                                        <input type="submit" className="btn btn-success" value="create"/>
+                                        <input type="submit" className="btn " style={{backgroundColor:"#60dae0"}} value="create"/>
                                         <Link to={"/contacts/list"} className="btn btn-dark ms-2">Cancel</Link>
                                     </div>
                                 </form>

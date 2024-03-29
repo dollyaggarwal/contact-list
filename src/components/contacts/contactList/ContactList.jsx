@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import userImg from "../../../Images/userImg.png";
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { FaUserCircle } from "react-icons/fa";
 import {SearchContact, constactSelector, deleteContact, fetchStart, getContacts } from "../../../redux/ContextReducer";
 
 const ContactList = () => {
@@ -25,9 +26,9 @@ const ContactList = () => {
           <div className="grid">
             <div className="row">
               <div className="col">
-                <p className="h3 fw-bold">
-                  Contact Manager &nbsp;
-                  <Link to={"/contacts/add"} className="btn btn-primary">
+                <p className="h3 fw-bold text-light">
+                  Contact Diary &nbsp;
+                  <Link to={"/contacts/add"} className="btn text-dark" style={{backgroundColor:"#60dae0",}}>
                     <i className="fa fa-plus-circle me-2" />
                     New
                   </Link>
@@ -51,7 +52,7 @@ const ContactList = () => {
                       <div className="mb-2">
                         <input
                           type="submit"
-                          className="btn btn-outline-dark"
+                          className="btn btn-outline-light"
                           value="search"
                         />
                       </div>
@@ -68,13 +69,14 @@ const ContactList = () => {
       <section className="contact-list">
           <div className="container">
             <div className="row">
-                <div className="d-flex flex-wrap" style={{gap:"2.5%"}}> 
+                <div className="d-flex flex-wrap" style={{gap:"2.5%", borderRadius:"10px"}}> 
                 {contacts.map((user,i)=>(
-                       <div key={i} className="card" style={{width:"48%", marginTop:"2.5%", padding:"1.5%"}}>
+                       <div key={i} className="card" style={{width:"48%", marginTop:"2.5%", padding:"1.5%", backgroundColor:"#EEEEEE"}}>
                        <div className="card-body">
                           <div className="row align-items-center d-flex justify-content-around">
                           <div className="col-md-4">
-                               <img src={userImg} alt="userImg" className="contact-img"/>
+                          <FaUserCircle className="contact-img"/>
+                            
                            </div>
                            <div className="col-md-7">
                                 <ul className="list-group">

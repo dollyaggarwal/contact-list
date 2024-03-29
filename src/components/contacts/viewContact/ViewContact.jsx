@@ -1,9 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import userImg from "../../../Images/userImg.png";
 import { useSelector } from "react-redux";
 import { constactSelector } from "../../../redux/ContextReducer";
-
+import { FaUserCircle } from "react-icons/fa";
 
 
 const ViewContact = ()=>{
@@ -28,7 +27,8 @@ const ViewContact = ()=>{
                <div className="container">
                    <div className="row">
                         <div className="col-md-4">
-                            <img src={userImg} alt="userImg" className="contact-img"/>
+                        <FaUserCircle className="contact-img" style={{color:"white"}}/>
+                        
                         </div>
                         <div className="col-md-8">
                         <ul className="list-group">
