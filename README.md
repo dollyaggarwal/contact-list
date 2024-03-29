@@ -1,6 +1,6 @@
 # Introduction of project
 This is the 2nd React Skill test project assigned by Coding Ninjas.
-Project Name: Contact-Manager
+Project Name: Contact-Diary
 
 ## Available Scripts
 
@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `Hosted On`
-open [https://ishika-contact-manager.netlify.app/](https://ishika-contact-manager.netlify.app/) to view it in your browser
+open [https://my-contact-diary.netlify.app/contacts/list](https://my-contact-diary.netlify.app/contacts/list) to view it in your browser
 
 ## Features
 
