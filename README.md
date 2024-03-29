@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `Hosted On`
-open [https://my-contact-diary.netlify.app/contacts/list](https://my-contact-diary.netlify.app/contacts/list) to view it in your browser
+open [https://my-contact-diary.netlify.app](https://my-contact-diary.netlify.app) to view it in your browser
 
 ## Features
 
