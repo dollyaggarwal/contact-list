@@ -18,7 +18,7 @@ const ViewContact = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <p className="h3 text-primary fw-bold">View Contact</p>
+                            <p className="h3 text-warning fw-bold">View Contact</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const ViewContact = ()=>{
                    </div>
                    <div className="row">
                       <div className="col">
-                           <Link to={'/contacts/List'} className="btn btn-primary">Back</Link>
+                           <Link to={'/contacts/List'} className="btn btn-warning">Back</Link>
                       </div>
                    </div>
                </div>

@@ -50,7 +50,7 @@ const EditContact = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <p className="h4 text-success fw-bold">Edit Contact</p>
+                            <p className="h4 text-primary fw-bold">Edit Contact</p>
                         </div>
                         <div className="row align-items-center">
                             <div className="col-md-4">
@@ -65,7 +65,7 @@ const EditContact = ()=>{
                                         <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" className="form-control" placeholder="Email"/>
                                     </div>
                                     <div className="mb-2">
-                                        <input type="submit" className="btn btn-success" value="update"/>
+                                        <input type="submit" className="btn btn-primary" value="update"/>
                                         <Link to={"/contacts/list"} className="btn btn-dark ms-2">Cancel</Link>
                                     </div>
                                 </form>
